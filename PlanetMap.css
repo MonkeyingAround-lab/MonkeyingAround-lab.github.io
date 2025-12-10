@@ -12,10 +12,22 @@ body{
     
 }
 
+
+@font-face {
+    font-family: 'DigiText'; /*a name to be used later*/
+    src:url(DS-DIGI.TTF) /*URL to font*/
+}
+
 h1{
-  text-decoration-line: overline underline; 
+  text-underline-offset: 12;
   font: bolder italic;
-  font-size: larger;
+  font-size: 25px;
+
+  border: 5px, white, double;
+  margin: 15px ;
+  margin-top: 5px;
+  border-radius: 15px 35px 15px;;
+  text-align:center
   
 }
 
@@ -47,7 +59,7 @@ h1{
     
 }
 
-.SunTip { /*From W2S */
+.Tooltip { /*From W2S */ /* This section is universal for nearly all of the page, no need to replicate for each planet */
   visibility: hidden;
   position: absolute;
   line-break:auto;
@@ -55,12 +67,16 @@ h1{
   left:20px;
   top:20px;
   width: 230px;
-  height: 250px;
+  height: auto;
   background-color: rgba(62, 121, 163, 0.806);
   color: white;
   font-weight: 800;
-  text-align: center;
-  padding: 5px 0;
+  text-align:justify;
+  font-size:15px;
+  padding: 5px 15px;
+  padding-bottom: 15px;
+  margin: 10px;
+  font-family: "DigiText";
   z-index: 1; /* Ensure tooltip is displayed above content */
   /*Border styling because Fuck me there's a lot to write to be fancy*/
   border-radius: 15px 35px 15px;
@@ -77,6 +93,7 @@ h1{
     background-color: rgba(245, 222, 179, 0.505);
 }
 
-#Sun:active .SunTip {
+/*change back to active when done*/
+#Sun:hover .Tooltip {
     visibility:visible;
 }
