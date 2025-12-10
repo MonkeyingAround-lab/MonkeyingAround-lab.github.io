@@ -10,17 +10,33 @@
     <!--<img id="SystemMap" alt="Planets" src="Solar system.png">-->
     <div id="Container">
         <div id="Sun">
-            <div class="SunTip">
-                <h1>Sol-Totec</h1>
+            <div class="Tooltip">
+                    <audio id="audio" src="SelectSound.wav"></audio>
+                <h1>SOL-TOTEC</h1>
                 <span>The sun of the Totec System, this temperate yellow star is surrounded by a slow burning debris field of doomed planetoids and Karrakin mining waste.</span>
             </div>
         </div>
         <div id="Blinkgate">
-            <div class="SunTip">
-                <h1>Sol-Totec</h1>
-                <span>The sun of the Totec System, this temperate yellow star is surrounded by a slow burning debris field of doomed planetoids and Karrakin mining waste.</span>
+            <div class="Tooltip ">
+                <h1>Blinkgate</h1>
+                <span>Union Blinkgate into the system, construction thereof was halted after SSC lobbying and numerous risks in the system, it now only remains only partially operational.</span>
             </div>
         </div>
     </div>
+    <script>
+    var audio = document.getElementById("audio");
+    var planet = document.getElementById("Container");
+    
+    function play() {
+      audio.play();
+    }
+    
+    function stop() {
+      audio.pause();
+    }
+    
+    planet.addEventListener('mouseover', play);
+    planet.addEventListener('mouseout', stop);
+  </script>
 </body>
 </html>
