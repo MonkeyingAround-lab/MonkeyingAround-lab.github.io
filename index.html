@@ -8,24 +8,156 @@
 </head>
 <body>
     <!--<img id="SystemMap" alt="Planets" src="Solar system.png">-->
+    <div id="Guidance">
+      <h1>Intro</h1>
+      <p>Welcome to the Totec System, to learn about the it, hover your mouse over points of interest </p>
+      <p>For full HTML/CSS function, be sure to click on the webpage to focus it. Additionally, view this in fullscreen for best alignment</p>
+      <p>Hover over the book in the corner for a full lore of the system.</p>
+    <!--Guidance above is just a tooltip without the sound ping incase someone hovers over it-->
+    </div>
     <div id="Container">
+              <audio id="audio" src="SelectSound.wav"></audio>
+              <audio id="Knock" src="KnockKnock.mp3"></audio>
         <div id="Sun">
             <div class="Tooltip">
-                    <audio id="audio" src="SelectSound.wav"></audio>
                 <h1>SOL-TOTEC</h1>
                 <span>The sun of the Totec System, this temperate yellow star is surrounded by a slow burning debris field of doomed planetoids and Karrakin mining waste.</span>
             </div>
         </div>
         <div id="Blinkgate">
-            <div class="Tooltip ">
+            <div class="Tooltip">
                 <h1>Blinkgate</h1>
-                <span>Union Blinkgate into the system, construction thereof was halted after SSC lobbying and numerous risks in the system, it now only remains only partially operational.</span>
+                <p>Union Blinkgate into the system, construction thereof was halted after SSC lobbying and numerous risks in the system, it now only remains only partially operational.</p>
+                <p>Only the first ring of the Blinkgate remains occasionally functional, with only small cargo vessels being capable of passing through, should the gate somehow be activated.</p>
+            </div>
+        </div>
+            <div id="Dawnlight">
+            <div class="Tooltip">
+                <h1>Dawnlight</h1>
+                <p>A planet on the far ends of the Totec system, the peculiar composition of its atmosphere results in it almost constantly being bathed in auroras.</p>
+                <p>Unverified Union intelligence reports suggest Aunic presence on this planet.</p>
+            </div>
+        </div>
+        <div id="Kaufin-3">
+            <div class="Tooltip">
+                <h1>Kaufin-3</h1>
+                <p>The carcass of a planet cracked open by Karrakin mining on the first colonisation of the system.</p>
+                <p>Most of the system's initial infratrucutre was built from the wealth of materials extracted from its core.</p>
+            </div>
+        </div>
+        <div id="Passacaglia">
+            <div class="Tooltip">
+                <h1>Passacaglia's Spear</h1>
+                <p>A massive exploitation rig constructed by the first Karrakin colonists, it shines with an ornamental radiance few other space stations can compete with.</p>
+                <p>While it spent many years derelict, its has recently become reinhabited by lesser Karrakin barons seeking to "reclaim" their right to the system.</p>
+            </div>
+        </div>
+        <div id="Longhaul">
+            <div class="Tooltip">
+                <h1>Longhaul Fleet</h1>
+                <p>A fleet of IPSN trading and cargo ships that have arrived in the system through near-light travel hoping to capitalise on SSC's recent moves.</p>
+                <p>Its presence in the system has also attracted many pirates and independant traders to follow.</p>
+            </div>
+        </div>
+        <div id="Mendel-1">
+            <div class="Tooltip">
+                <h1>Mendel-1</h1>
+                <p>An ocean planet, its surface dotted with ocassional islands of ice. The planet's hemisphere is shadowed by an SSC research base superstructure which is the headquarters of the megacorp's activities in the system.</p>
+                <p>SSC's recent uptick in demand for Metavault artifacts and NHPs has rendered this planet abuzz with activity.</p>
+            </div>
+        </div>
+        <div id="Mendel-2">
+            <div class="Tooltip">
+                <h1>Mendel-2</h1>
+                <p>A frozen moon orbiting Mendel-1, the most habitable world near the ocean planet.</p>
+                <p>SSC staff and Omninet integration structures reside on this moon when not on the Mendel-1 superstructure.</p>
+            </div>
+        </div>
+        <div id="Totec-1">
+            <div class="Tooltip">
+                <h1>Totec-1</h1>
+                <p>A desert planet that orbits closest to the sun of the system.</p>
+                <p>The unbearable proximity to the sun makes it difficult for life to exist on the planet, yet some scavengers, outlaws and underground communities persist.</p>
+            </div>
+        </div>
+         <div id="Corpulus">
+            <div class="Tooltip">
+                <h1>Corpulus</h1>
+                <p>A red gas giant, many karrakin extractors once used to pump out its mineral rich gases as part of mining operations.</p>
+                <p>Containers of tar-like compounds extracted from the planet circulate the system and are considered a valuable resource due to being usable as printer fillament.</p>
+            </div>
+        </div>
+        <div id="Corpulus-3">
+            <div class="Tooltip">
+                <h1>Corpulus-3</h1>
+                <p>A large barren moon that orbits Corpulus, its size makes it large enough to be considered a planet.</p>
+                <p>Errant Albatros Knights have been known to base themselves here, likely as a staging point should they be needed within the system.</p>
+            </div>
+        </div>
+        <div id="Wander">
+            <div class="Tooltip">
+                <h1>Wander Station</h1>
+                <p>A colony station, probably the most constant source of Union presence within the system ever since their disinterest in continuing work on the blinkgate.</p>
+                <p>Contains the system's Omninet node, crucial for communications to the rest of Union space.</p>
+            </div>
+        </div>
+        <div id="Green">
+            <div class="Tooltip">
+                <h1>Zhipaye</h1>
+                <p>A large verdant planet, its surface is covered in fields of grass-like flora and dotted with lakes that stretch deep under the surface of the planet.</p>
+                <p>Due to its extremely comfortable habitable nature, Zhipaye is the center of human colonial occupation of the system and originally the reason for Union's interest in the system.</p>
+                <p>Following recolonisation of the system Zhipaye acts as an argicultural export world, sending shipments of crops to trade for resources necessary in expanding its colonies.</p>
+            </div>
+        </div>
+        <div id="Yellow">
+            <div class="Tooltip">
+                <h1>Trailchaser</h1>
+                <p>A planet that closely follows behind the orbit of Zhipaye, aside from Zhipaye it has the largest colonial presence.</p>
+                <p>Water is scarce on this planet, though enough is present for colonists to survice, they constantly seek means to acquire more.</p>
+                <p>Many Karrakin structures lay buried under the sands of this planet.</p>
+            </div>
+        </div>
+        <div id="Book">
+            <div class="TooltipBook">
+                <h1>The Totec System</h1>
+                <p>A Single Starred Solar system on the far reaches of the orion arm, the Totec system was originally first colonised by Karrakin barons several centuries ago. Karrakin occupation of the system extracted many resources of the planets for tithe to throne Karrakis or construction of colonies within the system. </p>
+                <p>However, while their exploitation of the system proved fruitful, Karrakin occupation of the Totec system would quickly come to an end. As Baronic Wars tithed larger and larger populations from the colonies of the system many of the worlds were left once again uninhabited by humans and the space stations left derelict.</p>
+                <p>Following abandonment of the system by Karrakis, it was left uninhabited for close to a century, allowing many signs of human occupation to fade away. Recently the system gained Union's attention as a viable system for expansion and inclusion into Union's list of core worlds, this caused a resurgence of colonisation efforst from both idependant colonists and SSC who had taken an interest in the system's potential for alien life.</p>
+                <p>Union's efforts in the system have mostly stopped due to a shifting of interests back at Cradle and SSC lobbying to postpone the construction of the Blinkgate, however human life has once again found its foothold in the Totec system with many colonial operations underway as its inhabitants try their best to live life in this star system.</p>
+                <p>.</p>
+                <p>Colonists within the Totec system enjoy what can be considered a semi-diasporan lifestyle; while they don't enjoy the luxury of post-scarcity life seen on core worlds, they are not facing a constant struggle to survice and scrounge for resources</p>
+                <p>Most colonists either work for SSC, IPSN or for their local colony, working as a functional society with varying degrees of sucess for each colony.</p>
+                <p>Trade within the system is frequent, with many trader vessels jumping over from nearby solar systems and refueling or bartering for goods at Wander station, this presence of traders is accompanied by a fair share of pirates as well, however most colonists have little to fear from spacebound pirates.</p>
+                <p>.</p>
+                <p>SSC has been carrying out research on life and phenomena within the system, conducting their operations from a planetary superstructure built around the ocean planet of Mendel-1.</p>
+                <p>Researchers from SSC have been bidding on and ordering shipments of Metavault and Blinkspace artifacts in bulk as of late, though many traders see this as an opportuinty for a quick profit, others have grown wary of the Megacorp's intentions within the system.</p>
+                <p>.</p>
+                <p>Karrakin nobles have been sighted making bases again in the system for the first time since abandoning it, stating they seek to "reclaim" the wealth left behind by their ancestors. </p>
+                <p>While these baronic forces have not made any explicit moves yet many colonists are worried that their homes may soon put at risk.</p>
             </div>
         </div>
     </div>
+    <div id="AlignmentCheck">
+            <div class="Tooltip">
+            </div>
+        </div>
+        <div id="Poem">
+            <div class="TooltipEvil">
+                <h1>???</h1>
+                <p>It was a low, dull, quick sound — much such a sound as a watch makes when enveloped in cotton. I gasped for breath — and yet the officers heard it not. I talked more quickly — more vehemently; but the noise steadily increased. I arose and argued about trifles, in a high key and with violent gesticulations; but the noise steadily increased. Why would they not be gone? I paced the floor to and fro with heavy strides, as if excited to fury by the observations of the men — but the noise steadily increased. Oh God! what could I do? I foamed — I raved — I swore! I swung the chair upon which I had been sitting, and grated it upon the boards, but the noise arose over all and continually increased. It grew louder — louder — louder! And still the men chatted pleasantly, and smiled. Was it possible they heard not? Almighty God! — no, no! They heard! — they suspected! — they knew! — they were making a mockery of my horror! — this I thought, and this I think. But anything was better than this agony! Anything was more tolerable than this derision! I could bear those hypocritical smiles no longer! I felt that I must scream or die! — and now — again! — hark! louder! louder! louder! louder! —
+                </p>
+<p>“Villains!” I shrieked, “dissemble no more! I admit the deed! — tear up the planks! — here, here! — it is the beating of his hideous heart!</p>
+           </div>
+        </div>
     <script>
     var audio = document.getElementById("audio");
     var planet = document.getElementById("Container");
+     var EAudio = document.getElementById("Knock");
+    var Evil = document.getElementById("Poem");
+
+    function playE() {
+      EAudio.play();
+    }
     
     function play() {
       audio.play();
@@ -36,7 +168,7 @@
     }
     
     planet.addEventListener('mouseover', play);
-    planet.addEventListener('mouseout', stop);
+    Evil.addEventListener('click', playE);
   </script>
 </body>
 </html>
